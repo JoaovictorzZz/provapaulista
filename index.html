@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativo Provão Paulista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Estudo - Provão Paulista</h1>
+    <p>Conteúdo que pode cair no Provão Paulista.</p>
+  </header>
+
+  <div class="tabs">
+  
+
+    </label>
+
+    <div class="tablinks">
+      <button class="tablink" onclick="openTab(event, 'inicio')">Início</button>
+      <button class="tablink" onclick="openTab(event, 'matematica')">📚 Matemática</button>
+      <button class="tablink" onclick="openTab(event, 'portugues')">📖 Português</button>
+      <button class="tablink" onclick="openTab(event, 'biologia')">🔬 Biologia</button>
+      <button class="tablink" onclick="openTab(event, 'historia')">📜 História</button>
+      <button class="tablink" onclick="openTab(event, 'geografia')">🌍 Geografia</button>
+      <button class="tablink" onclick="openTab(event, 'ingles')">🏈 Inglês</button>
+    </div>
+  </div>
+
+
+  <div id="inicio" class="tabcontent">
+    <h2>Bem-vindo ao Sistema de Estudos do Provão Paulista</h2>
+    <p>Este sistema foi desenvolvido para auxiliar os alunos na preparação para o Provão Paulista, que ocorrerá nos dias <strong>30 e 31 de outubro</strong>. Essa prova é extremamente importante para quem deseja entrar em uma faculdade, pois é um dos principais requisitos para o ingresso em instituições públicas e privadas de ensino superior.</p>
+    <p>A atividade dos alunos será desenvolver um sistema com materiais de estudo que abordem os principais tópicos cobrados na prova. Aqui você encontrará conteúdos sobre Matemática, Português, Ciências, História, Geografia e outros, além de formulários para praticar os conhecimentos adquiridos e blocos de anotações para registrar suas dúvidas e estudos.</p>
+    
+  
+    <div class="image-container">
+      <img src="/img/image.png" alt="Imagem ilustrativa sobre o Provão Paulista">
+    </div>
+    
+    <div class="activity-text">
+        <h1>ATIVIDADE DO TIO ERICK</h1>
+        <p>Construa nas demais abas um material de estudo para cada matéria listada na parte superior do site.</p>
+        
+        <p>Quero tirar um momento para falar diretamente com vocês. Este é um período muito importante em suas vidas, e eu gostaria que vocês se esforçassem ao máximo. O Provão Paulista é mais do que apenas uma prova; é uma oportunidade incrível de dar um passo em direção ao futuro que vocês sempre sonharam. Acreditem em mim quando digo que o esforço que vocês colocam agora pode abrir portas para as faculdades que tanto desejam.</p>
+        
+        <p>Lembrem-se de que cada um de vocês tem um potencial enorme. Eu amo cada um de vocês e já sinto um imenso orgulho pelo trabalho que vocês têm feito até aqui. Estou confiante de que, se se dedicarem e acreditarem em si mesmos, conseguirão alcançar grandes conquistas.</p>
+        
+        <p>Espero encontrá-los no topo algum dia, realizando os sonhos que têm cultivado com tanto carinho. Continuem firmes e lembrem-se: vocês são capazes de conseguir, eu amo muito cada um de vocês.</p>
+        
+        <p class="signature">Bons estudos do Professor e muito gato, <strong>Erick Barbosa</strong></p>
+    </div>
+  </div>
+
+  <div id="matematica" class="tabcontent">
+    <h2>Matemática</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>Aritmética</li>
+      <li>Geometria</li>
+      <li>Álgebra</li>
+      <li>Funções</li>  
+    </ul>
+    <h3>As contas de luz e de água de uma residência apresentaram, respectivamente, os valores de R$ 154,32 e R$ 63,95. Quanto é o valor total que o morador dessa residência deve pagar?</h3>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+</head>
+<body>
+    <input type="text" name="conta1" id="n1" placeholder="Digite primeiro número">
+    <br>
+    <input type="text" name="conta2" id="n2" placeholder="Digite segundo número">
+    <br>
+    <button class="enviar" onclick="exibirSoma()">Enviar</button>
+    <p class="exibir"></p>
+
+    <script>
+        function soma(n1, n2) {
+            return parseFloat(n1) + parseFloat(n2);
+        }
+
+        function exibirSoma() {
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+            if (isNaN(n1) || isNaN(n2) || n1 === "" || n2 === "") {
+                document.querySelector(".exibir").innerHTML = "Por favor, insira números válidos.";
+                return;
+            }
+
+            const resultado = soma(n1, n2);
+            document.querySelector(".exibir").innerHTML = `Resultado: ${resultado}`;
+        }
+    </script>
+</body>
+</html>
+
+  </div>
+
+  <div id="portugues" class="tabcontent">
+    <h2>Português</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>Interpretação de Texto</li>
+      <p>é uma habilidade de entender e extrair o sentido de um texto, analisando informações explícitas e implícitas.</p>
+      <li>Gramática</li>
+      <p>é o conjunto de regras que nos ajuda a falar e escrever corretamente, organizando as palavras e frases para que a comunicação seja clara e compreensível.</p>
+      <li>Redação</li>
+    </ul>
+  </div>
+
+  <div id="biologia" class="tabcontent">
+    <h2>Biologia</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>Biologia Celular</li>
+      <p>A biologia celular é como observar o mundo das células, que são como pequenas fábricas dentro de todos os seres vivos. Ela estuda como essas "fábricas" funcionam, como produzem energia, se comunicam e mantêm tudo em ordem para que a vida aconteça.</p>
+      <li>Genética</li>
+      <p>A genética é como o estudo do “manual de instruções” que cada ser vivo carrega no DNA. Ela explica como herdamos características de nossos pais, como o cor dos olhos ou o formato do cabelo, e por que cada pessoa ou ser vivo é único.</p>
+      <li>Ecologia</li>
+      <p>A ecologia é sobre entender como todos os seres vivos – plantas, animais e nós, humanos – interação entre si e com o meio ambiente. Ela nos mostra como cada elemento da natureza está conectado, e como o equilíbrio dessa relação</p>
+    </ul>
+  </div>
+
+  <div id="historia" class="tabcontent">
+    <h2>História</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>História Geral</li>
+      <li>História do Brasil</li>
+    </ul>
+  </div>
+
+  <div id="geografia" class="tabcontent">
+    <h2>Geografia</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>Geografia Física</li>
+      <li>Geopolítica</li>
+    </ul>
+  </div>
+
+
+  <div id="ingles" class="tabcontent">
+    <h2>Inglês</h2>
+    <p>Tópicos importantes:</p>
+    <ul>
+      <li>Compreensão de Texto</li>
+      <li>Gramática</li>
+      <li>Vocabulário</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
