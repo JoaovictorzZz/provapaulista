@@ -75,25 +75,20 @@
     <br>
     <input type="text" name="conta2" id="n2" placeholder="Digite segundo número">
     <br>
-    <button class="enviar" onclick="exibirSoma()">Enviar</button>
+    <button class="enviar" onclick="escopo()">Enviar</button>
     <p class="exibir"></p>
 
     <script>
-        function soma(n1, n2) {
-            return parseFloat(n1) + parseFloat(n2);
-        }
+     function escopo(){
+      const n1 = parseFloat(document.querySelector('#n1').value);
+      const n2 = parseFloat(document.querySelector('#n2').value);
 
-        function exibirSoma() {
-            const n1 = document.getElementById("n1").value;
-            const n2 = document.getElementById("n2").value;
-            if (isNaN(n1) || isNaN(n2) || n1 === "" || n2 === "") {
-                document.querySelector(".exibir").innerHTML = "Por favor, insira números válidos.";
-                return;
-            }
-
-            const resultado = soma(n1, n2);
-            document.querySelector(".exibir").innerHTML = `Resultado: ${resultado}`;
-        }
+      function soma(n1, n2){
+        return n1 + n2
+      };
+      const resultado = soma(n1,n2);
+      document.querySelector('.exibir').innerHTML = `Resultado = ${resultado}`
+     }
     </script>
 </body>
 </html>
